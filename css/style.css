@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 1440px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  padding-top: 49px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.main-nav {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 440px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav-item {
+  flex-shrink: 0;
+  margin-right: 46px;
+}
+
+.main-nav-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.main-nav-item a {
+  padding: 0;
+  margin: 0;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  outline: none;
+  border-bottom: 2px solid #fb565a;
+}
+
+.main-nav-item a[href] {
+  border: none;
+}
+
+.main-nav-item a[href]:hover,
+.main-nav-item a[href]:focus {
+  color: #fb565a;
+}
+
+.main-nav-item a[href]:active {
+  opacity: 0.3;
+  color: #000000;
+}
+
+.user-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.user-nav-basket {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  border: none;
+  padding: 0 0 0 44px;
+  margin: 0;
+}
+
+.user-nav-basket[href] {
+  border-bottom: 2px solid #fb565a;
+}
+
+.user-nav-basket::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-nav-basket:hover,
+.main-nav-item:focus {
+  color: #fb565a;
+}
+
+.user-nav-baske:active {
+  opacity: 0.3;
+  color: #000000;
+}
