@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  width: 100%;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -44,8 +43,7 @@ input[type="radio"].visually-hidden {
 }
 
 .layout {
-  width: 1440px;
-  padding-right: 140px;
+  min-width: 1200px;
   padding-left: 140px;
   margin: 0 auto;
 }
@@ -56,10 +54,9 @@ input[type="radio"].visually-hidden {
 }
 
 .header-layout {
-  width: 1440px;
+  min-width: 1200px;
   display: flex;
   align-items: flex-start;
-  padding-right: 140px;
   padding-left: 140px;
   padding-top: 49px;
   margin: 0 auto;
@@ -79,7 +76,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav {
-  width: 480px;
   padding-top: 25px;
 }
 
@@ -140,6 +136,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   padding: 25px 0 0 0;
   margin: 0 0 0 auto;
+  margin-left: 41px;
 }
 
 .user-nav-item + .user-nav-item {
@@ -190,7 +187,7 @@ input[type="radio"].visually-hidden {
 
 .slider {
   width: 100%;
-  height: 413px;
+  height: 428px;
   background-color: #eeeeee;
   margin: 0 auto;
 }
@@ -198,7 +195,7 @@ input[type="radio"].visually-hidden {
 .slider-layout {
   position: relative;
   margin: 0 auto;
-  width: 1440px;
+  min-width: 1200px;
   padding-left: 140px;
   padding-right: 140px;
   display: flex;
@@ -248,7 +245,6 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-title {
-	width: 380px;
   display: block;
 	font-size: 55px;
 	line-height: 55px;
@@ -256,8 +252,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-bottom: 23px;
-  margin-top: 8px;
   margin-left: 30px;
+  margin-top: 19px;
 }
 
 .slider-text {
@@ -270,13 +266,14 @@ input[type="radio"].visually-hidden {
   margin-left: 31px;
 	display: flex;
 	flex-direction: column;
+	padding-top: 4px;
 }
 
  .slider-toggles {
   position: absolute;
-  bottom: 68px;
+  bottom: 84px;
   right: 50%;
-  transform: translateX(50%);
+  transform: translateX(97%);
 } 
 
 .slider-toggles input[type="radio"] {
@@ -289,7 +286,7 @@ input[type="radio"].visually-hidden {
 
  .slider-controls label {
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 6px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -319,8 +316,8 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding-left: 53px;
   padding-right: 55px;
-  margin-left: 31px;
-  margin-top: 10px;
+  margin-left: 32px;
+  margin-top: 6px;
 }
 
 .btn-slider:active {
@@ -371,7 +368,7 @@ input[type="radio"].visually-hidden {
 	
 .services {
   width: 100%;
-  padding-top: 80px;
+  padding-top: 65px;
   padding-bottom: 30px;
 }
 
@@ -410,7 +407,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-text {
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 }
 	
 .service-btn {
@@ -434,6 +431,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 32px;
 }
 
 .info-wrapper {
@@ -446,7 +444,9 @@ input[type="radio"].visually-hidden {
 }
 
 .info-services li{
-	padding-bottom: 24px;
+	padding-bottom: 30px;
+	margin-left: -4px;
+	
 }
 
 .info-services li::before{
@@ -455,7 +455,7 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
   border-bottom: 2px solid #fb565a;
-  margin-left: -36px;
+  margin-left: -34px;
   margin-top: -14px;
 }
 
@@ -465,7 +465,7 @@ input[type="radio"].visually-hidden {
 	text-align: left;
 	line-height: 24px;
 	color: #283136;
-	padding-bottom: 14px;
+	padding-bottom: 22px;
 }
 
 .info-title {
@@ -473,6 +473,8 @@ input[type="radio"].visually-hidden {
 	font-size: 45px;
 	line-height: 45px;
 	color: #000000;
+	letter-spacing: 0.2px;
+	margin-bottom: 33px;
 }
 
 .info h3 {
@@ -482,7 +484,7 @@ input[type="radio"].visually-hidden {
 	text-align: left;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding-bottom: 24px;
+	padding-bottom: 10px;
 }
 
 .facts {
@@ -490,6 +492,7 @@ input[type="radio"].visually-hidden {
   width: 360px;
   margin-left: auto;
   text-align: center;
+  margin-top: -30px;
 }
 
 .facts p {
@@ -498,16 +501,17 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 	text-transform: uppercase;
 	font-weight: bold;
+	padding-top: 18px;
 }
 
 .indicators td {
 	padding-top: 49px;
 	padding-bottom: 27px;
-	padding-right: 26px;
 	font-size: 45px;
 	line-height: 10px;
 	color: #000000;
 	font-weight: bold;
+	letter-spacing: -2,5px;
 }
 
 .indicators th {
@@ -531,8 +535,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
   flex-wrap: wrap;
   margin-left: -20px;
-  margin-right: -20px;
-  margin-top: 36px;
+  margin-bottom: -6px;
 }
 
 .clients-item {
@@ -579,7 +582,7 @@ input[type="radio"].visually-hidden {
 
 .page-footer {
 	position: relative;
-	padding-top: 60px;
+	padding-top: 80px;
 	width: 100%;
 }
 
@@ -606,7 +609,7 @@ input[type="radio"].visually-hidden {
 	width: 319px;
   height: 308px;
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 36px;
   padding-right: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
@@ -643,13 +646,13 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	padding-top: 19px;
 	padding-bottom: 19px;
-	margin-top: 37px;
+	margin-top: 34px;
 	margin-bottom: 47px;
 }
 
 .map-marker {
   position: absolute;
-  top: 80px;
+  top: 90px;
   left: 820px;
 }
 
@@ -724,7 +727,6 @@ input[type="radio"].visually-hidden {
  .feedback-field input:invalid{
   border: 2px solid #e74246;
 } 
-
 
 .feedback-field textarea {
   height: 118px;
@@ -819,9 +821,9 @@ input[type="radio"].visually-hidden {
 .page-footer-bottom {
 	display: flex;
 	align-items: center;
-	width: 1200px;
+	min-width: 1200px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 74px;
 }
 
 .social-list {
@@ -900,10 +902,10 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-layout {
-  width: 1440px;
+  min-width: 1200px;
   padding-right: 140px;
   padding-left: 140px;
-  padding-top: 60px;
+  padding-top: 53px;
   margin: 0 auto;
   display: flex;
 }
@@ -927,7 +929,7 @@ input[type="radio"].visually-hidden {
 .range {
   position: relative;
   padding: 40px 0 40px 18px;
-  margin-top: 29px;
+  margin-top: 33px;
   background-color: #eee;
   border: 1px solid #eee;
   border-radius: 3px;
@@ -1009,6 +1011,7 @@ input[type="radio"].visually-hidden {
 .filter-title {
   margin: 0;
   padding-bottom: 21px;
+  letter-spacing: 2px;
 }
 
 .filter-item {
@@ -1186,10 +1189,11 @@ input[type="checkbox"] + label:disabled::after {
   flex-wrap: wrap;
   list-style: none;
   margin-left: 140px;
+  margin-top: 12px;
 }
 
 .catalog-list-item {
-  padding-bottom: 73px;
+  padding-bottom: 67px;
 	position: relative;
 }
 
